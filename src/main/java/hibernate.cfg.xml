@@ -17,7 +17,7 @@
         
         
         <mapping class="com.hibenate.badriHibernate.Contacts"/>
-        <mapping class="hibernate_CRUDL.Employee"/>
+        <!-- <mapping class="hibernate_CRUDL.Employee"/> -->
         
     </session-factory>
 </hibernate-configuration>
