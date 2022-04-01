@@ -10,14 +10,15 @@
         <property name="hibernate.connection.password"></property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-<!--         <property name="hibernate.cache.use_second_level_cache">true</property> -->
-<!-- 		<property name="hibernate.cache.use_query_cache">true</property> -->
-<!-- 		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property> -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+ 		<property name="hibernate.cache.use_query_cache">true</property>
+ 		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+        <property name="hbm2ddl.auto">update</property>
         
         
         <mapping class="com.hibenate.badriHibernate.Contacts"/>
-        <!-- <mapping class="hibernate_CRUDL.Employee"/> -->
+        <mapping class="hibernate_CRUDL.Employee"/>
+        <mapping class="com.hibernate.cache.Cars"/>
         
     </session-factory>
 </hibernate-configuration>
