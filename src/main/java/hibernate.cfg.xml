@@ -18,7 +18,8 @@
         <!-- <mapping class="com.hibenate.badriHibernate.Contacts"/>
         <mapping class="hibernate_CRUDL.Employee"/>
         <mapping class="com.hibernate.cache.Cars"/> -->
-        <mapping class="com.hibernate.embeddable.User"/>
+        <!-- <mapping class="com.hibernate.embeddable.User"/> -->
+        <mapping class="com.hibernate.temporaltransiantinsertable.Laptop"/>
         
     </session-factory>
 </hibernate-configuration>
