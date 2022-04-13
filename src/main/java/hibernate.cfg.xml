@@ -19,7 +19,9 @@
         <mapping class="hibernate_CRUDL.Employee"/>
         <mapping class="com.hibernate.cache.Cars"/> -->
         <!-- <mapping class="com.hibernate.embeddable.User"/> -->
-        <mapping class="com.hibernate.temporaltransiantinsertable.Laptop"/>
+        <!-- <mapping class="com.hibernate.temporaltransiantinsertable.Laptop"/> -->
+        <mapping class = "com.hibernate.relationships.Person" />
+        <mapping class = "com.hibernate.relationships.Asset" />
         
     </session-factory>
 </hibernate-configuration>
