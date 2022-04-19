@@ -1,10 +1,15 @@
 package com.hibernate.relationships;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -16,14 +21,40 @@ public class Person {
 	private Integer age;
 	private String gender;
 	
-	@OneToOne
-	@JoinColumn(name = "Asset_ID")
-	private Asset asset;
+//	@OneToMany
+//	private Collection<Asset> assets = new ArrayList<Asset>();
 	
-	@Override
-	public String toString() {
-		return "Person [ID=" + ID + ", name=" + name + ", age=" + age + ", gender=" + gender + ", asset=" + asset + "]";
+/**
+	 * @param name
+	 * @param age
+	 * @param gender
+	 * @param assets
+	 */
+	public Person(String name, Integer age, String gender) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		
 	}
+
+//	
+//	@OneToOne
+//	@JoinColumn(name = "Asset_ID")
+//	private Asset asset;
+//	
+//	@Override
+//	public String toString() {
+//		return "Person [ID=" + ID + ", name=" + name + ", age=" + age + ", gender=" + gender + ", asset=" + asset + "]";
+//	}
+
+//	public Collection<Asset> getAssets() {
+//		return assets;
+//	}
+//
+//	public void setAssets(Collection<Asset> assets) {
+//		this.assets = assets;
+//	}
 
 	/**
 	 * 
@@ -39,13 +70,13 @@ public class Person {
 	 * @param gender
 	 * @param asset
 	 */
-	public Person(String name, Integer age, String gender, Asset asset) {
-		super();
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
-		this.asset = asset;
-	}
+//	public Person(String name, Integer age, String gender, Asset asset) {
+//		super();
+//		this.name = name;
+//		this.age = age;
+//		this.gender = gender;
+//		this.asset = asset;
+//	}
 
 	public Integer getID() {
 		return ID;
@@ -79,13 +110,13 @@ public class Person {
 		this.gender = gender;
 	}
 
-	public Asset getAsset() {
-		return asset;
-	}
-
-	public void setAsset(Asset asset) {
-		this.asset = asset;
-	}
+//	public Asset getAsset() {
+//		return asset;
+//	}
+//
+//	public void setAsset(Asset asset) {
+//		this.asset = asset;
+//	}
 	
 	
 	
