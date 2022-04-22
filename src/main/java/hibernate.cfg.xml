@@ -23,9 +23,10 @@
         <!-- <mapping class="com.hibernate.temporaltransiantinsertable.Laptop"/> -->
         <!-- <mapping class = "com.hibernate.relationships.Person" /> -->
         <!-- <mapping class = "com.hibernate.relationships.Asset" /> -->
-        <mapping class="com.hibernate.inheritance.Project"></mapping>
+        <!-- <mapping class="com.hibernate.inheritance.Project"></mapping>
 		<mapping class="com.hibernate.inheritance.Developement"></mapping>
-		<mapping class="com.hibernate.inheritance.Testing"></mapping>
+		<mapping class="com.hibernate.inheritance.Testing"></mapping> -->
+		<mapping class="com.hibernate.HQL.Iplteams"></mapping>
         
     </session-factory>
 </hibernate-configuration>
